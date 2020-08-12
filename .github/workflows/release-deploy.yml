@@ -20,4 +20,4 @@ jobs:
         rm -rf ./node_modules/chromedriver
         rm -rf ./node_modules/geckodriver
         cp -r ./lib/* ./node_modules
-        npm test
+        sudo npm test
