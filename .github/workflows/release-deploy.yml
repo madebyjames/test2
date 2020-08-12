@@ -17,4 +17,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         npm install
+        rm -rf ./node_modules/chromedriver
+        rm -rf ./node_modules/geckodriver
+        cp -r ./lib/* ./node_modules
         npm test
